@@ -17,7 +17,7 @@ namespace EFGetStarted
                 db.SaveChanges();
 
                 // Read
-                Console.WriteLine("Querying for a blog wait");
+                Console.WriteLine("Querying for a blog");
                 var blog = db.Blogs
                     .OrderBy(b => b.BlogId)
                     .First();
